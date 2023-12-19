@@ -108,6 +108,14 @@ export const bookApi = {
             return parseApiResponse(err);
         }
     },
+    async addBookToHistory(book_id){
+        try {
+            const response = await api.post(BOOK_BASE_URL + `/recommends/${book_id}`);
+            return parseApiResponse(response);
+        } catch (err) {
+            return parseApiResponse(err);
+        }
+    },
     async editBook(id, bookname, description, category_names, age, price){
         try {
             const response = await api.put(BOOK_BASE_URL + `/edit/${id}`, {

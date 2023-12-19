@@ -63,7 +63,8 @@ const BookFrame = ({ open, setOpen, book, recommendBooks, openBook }) => {
         }
     }
 
-    const readBook = () => {
+    const readBook = async () => {
+        const response = await bookApi.addBookToHistory(book.id);
         window.location.href = `/reads?bookId=${book.id}`
     }
     const buyBook = () => {
