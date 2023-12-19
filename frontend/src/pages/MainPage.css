@@ -1,0 +1,74 @@
+.mainPage{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #FFCC99;
+}
+
+
+.suggestionArea{
+	width: 1396;
+	height: 190;
+	left: 22;
+	top: 653;
+	position: relative;
+	justify-content: center;
+	align-items: flex-start; 
+	gap: 11 ;
+	display: inline-flex;
+
+}
+
+.suggestedBook{
+	width: 215px;
+	height: 354px;
+	border-radius: 50px;
+  	background-position: left top;
+  	background-repeat: repeat;
+  	padding: 20px;
+  	cursor: pointer; 
+}
+
+.sectionText{
+	color: #FFF;
+	text-align: left;
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: Bungee Spice;
+	font-size: 26.748px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 74.771% */
+	letter-spacing: -0.073px;
+}
+
+.sectionArea{
+	margin-top: 20px;
+	width: 1396px;
+	height: 130px;
+	justify-content: left;
+	align-items: flex-start;
+	gap: 11px;
+	display: flex;
+	flex-shrink: 0;
+}
+
+
+.sectionBook {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.sectionBookImg {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+}
+
+.ant-modal-content {
+  background-color: red;
+}

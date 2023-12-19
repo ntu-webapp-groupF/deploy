@@ -1,0 +1,39 @@
+#memberPage{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #FFCC99;
+}
+
+#title2{
+	width: 1156px;
+	height: 94px;
+	left: 64px;
+	top: 91px;
+	position: absolute;
+	color: white;
+	font-size: 64px;
+	font-family: Optima;
+	font-weight: 900;
+	word-wrap: break-word;
+}
+
+#freeBox{
+	width: 264px;
+	height: 264px; 
+	left: 559px; 
+	top: 267px; 
+	position: absolute;
+	background: rgba(255, 135, 14, 0.30);
+	cursor: pointer;
+}
+
+#premiumBox{
+	width: 264px;
+	height: 264px; 
+	left: 913px; 
+	top: 267px; 
+	position: absolute;
+	background: #FF870E;
+	cursor: pointer;
+}
