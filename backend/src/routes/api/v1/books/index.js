@@ -1,6 +1,6 @@
 // in src/routes/api/v1/books/index.js
 import { Router } from 'express';
-import { createBooks, deleteBooks, getAllBooks, editBooksInfo, purchaseBooks, addBooksCollection, getUploadedBooks} from './handler.js';
+import { createBooks, deleteBooks, getAllBooks, editBooksInfo, purchaseBooks, addBooksCollection, addBooksHistory, getUploadedBooks} from './handler.js';
 import { getRecommendBooks,getBooksByCategorys,getCollectionBooks,getBooksByAgeRange,getBooksByPriceRange,getPurchasedBooks, getBookById } from './handler.js';
 
 import multer from 'multer';
@@ -23,6 +23,7 @@ router.put('/edit/:id', editBooksInfo)
 
 router.post('/purchased/:book_id', purchaseBooks);
 router.post('/collection/:book_id', addBooksCollection);
+router.post('/recommends/:book_id', addBooksHistory);
 //router.get('/recommends', getRecommendBooks);
 router.get('/category/:category_id', getBooksByCategorys);
 //router.get('/collections',getCollectionBooks);
