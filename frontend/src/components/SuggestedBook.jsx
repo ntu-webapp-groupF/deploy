@@ -31,7 +31,7 @@ const SuggestedBook = ({ books }) => {
       <BookFrame open={open} setOpen={setOpen} book={book} recommendBooks={books} openBook={openBook}/>
       {
         books.map((book, index) => (
-          <Card onClick={() => openBook(book)}  key={index} style={{ width: 200, height: 300 }} hoverable cover={<img alt={book.name} src={book.profile_image} />} />
+          <Card onClick={() => openBook(book)}  key={index} style={{ width: 180, height: 250 }} hoverable cover={<img alt={book.name} src={book.profile_image} />} />
         ))
       }
     </Flex>

@@ -88,7 +88,7 @@ const EditPage = () => {
               justifyContent: 'center',
               paddingTop: '50px'
             }}>
-              <h1>EditPage</h1>
+              <h1>Change Password</h1>
             </div>
       
             <div style={{

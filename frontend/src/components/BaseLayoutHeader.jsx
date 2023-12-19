@@ -100,7 +100,7 @@ const BaseLayoutHeader = () => {
       </Row>
       <Row align="middle" gutter={32}>
         <Col>
-          <Tooltip title="TODO">
+          <Tooltip title="Search">
             <Button onClick={onClickSearch} type='text' icon={<SearchOutlined style={{ fontSize: '20px'}} />} size='large' />
           </Tooltip>
         </Col>

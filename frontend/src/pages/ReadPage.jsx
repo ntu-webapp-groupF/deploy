@@ -141,7 +141,7 @@ const ReadPage = () => {
                         content: 'Please purchase the book to continue reading.',
                         okText: 'Purchase',
                         onOk: () => {
-                            //TODO: jump to purchase page
+                             window.location.href = `/purchase?bookId=${bookid}`
                         }
                     })
                 }

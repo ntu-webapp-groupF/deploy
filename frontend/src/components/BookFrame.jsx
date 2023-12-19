@@ -157,7 +157,7 @@ const BookFrame = ({ open, setOpen, book, recommendBooks, openBook }) => {
                                 </Typography.Title>
                                 <Typography.Text
                                     style={{ fontFamily: 'optima' }}>
-                                    {book.description}
+                                    #Description: {book.description}
                                 </Typography.Text>
                             </Flex>
                             <Flex vertical justify='center' align='center' style={{ width: '100%', height: '30%' }}>
@@ -167,7 +167,7 @@ const BookFrame = ({ open, setOpen, book, recommendBooks, openBook }) => {
                                 </Typography.Text>
                                 <Flex gap={10} align='center' justify='center' style={{ width: '100%' }}>
                                     <Typography.Text style={{ fontFamily: 'optima' }}>
-                                        #This book is: 
+                                        #Category: 
                                     </Typography.Text>
                                     <Flex>
                                     {
