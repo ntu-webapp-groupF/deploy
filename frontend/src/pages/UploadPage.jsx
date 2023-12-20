@@ -1,9 +1,9 @@
-import { Button, message, Flex, Form, Input, InputNumber, Modal, Upload, Typography } from "antd"
+import { Button, message, Flex, Form, Input, InputNumber, Modal, Upload,Select,Typography } from "antd"
 import TextArea from "antd/es/input/TextArea";
 import { useState } from "react";
 import { PlusOutlined } from '@ant-design/icons';
 import { bookApi } from "../api/book";
-
+const { Option } = Select;
 //TODO: 這頁也可以拿來參考，基本上我是把上傳繪本的那頁跟功能做完了，基本上改的話就改 CSS 就好了，其他功能如果不清楚最好不要動XD
 
 const getBase64 = (file) =>
@@ -130,8 +130,17 @@ const UploadPage = () => {
                         <TextArea rows={15} placeholder="Introduce" />
                     </Form.Item>
                     <Form.Item label='' name='category_name'>
-                        <Input placeholder='adventure,mandarin,science' style={{ height: 64 }} />
+                        <Select
+                            placeholder='Select category'
+                            style={{ height: 64 }}>
+                            <Option value='adventure'>Adventure</Option>
+                            <Option value='mandarin'>Mandarin</Option>
+                            <Option value='science'>Science</Option>
+                            <Option value='other'>Other</Option>
+                            
+                        </Select>
                     </Form.Item>
+
                     <Form.Item label='' name='age'>
                         <InputNumber placeholder="Age" style={{ height: 32 }} />
                     </Form.Item>

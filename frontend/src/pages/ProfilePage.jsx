@@ -70,7 +70,7 @@ const ProfileComponent = () => {
         <Button style={{ height: '72px' }} type='text' onClick={() => navigate('/edit/profile')}>
             <Flex gap="large" align='center'>
                 <EditOutlined style={{fontSize: '48px'}}/>
-                <Typography.Text style={{fontSize: '24px'}}>EDIT PROFILE</Typography.Text>
+                <Typography.Text style={{fontSize: '24px'}}>CHANGE PASSWORD</Typography.Text>
             </Flex>
         </Button>
         <Button onClick={onClickCollections} style={{ height: '72px' }} type='text' >
